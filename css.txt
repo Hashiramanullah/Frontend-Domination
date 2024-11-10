@@ -1,0 +1,15 @@
+ yeh basic css onformation ha 
+
+me ,
+ ma css ka bary ma bta rha ho , chatgpt ap ko , acha css stand for cascading styling sheet jo b ham html ma content create karty ha is  content ki styling , ma ap coor keh lo aur positing  aaur animation etc yeh sab ap ka css kary gii ab css jo ha us ki three type ha 1, inline css  jo ka tag ma hi implement ho gi aur ab to tailwind css ka hi ak framework ha jis ka kam ab peek par ha 2, internal css jo ka file ka andar hi head se oper style ka ak tag laga kar implement ho gi 3, external css jo ka ak separate file banti ha aur us ma css ka code hota ha is ko external kehty ha html ma is ko header se oper     <link rel="stylesheet" href=""> href ka atribute ma file link deny se file link ho gi aur css implement ho gi kya ma ne sahi kha 
+ChatGPT said:
+ChatGPT
+Memory updated
+Haan, bilkul sahi samjha hai aapne! CSS ka full form Cascading Style Sheets hai, aur yeh HTML content ki styling ke liye use hoti hai. Types ka breakdown bhi theek diya aapne:
+
+teacher,
+
+Inline CSS: Tag ke andar style attribute me directly likha jata hai.
+Internal CSS: Page ke <head> section me <style> tag ke andar define ki jati hai, jo specific page par apply hoti hai.
+External CSS: Alag .css file banayi jati hai aur usay <link rel="stylesheet" href="path/to/file.css"> ke zariye HTML ke <head> me link kiya jata hai, jo CSS ko dusre pages me bhi reuse karne ka option deti hai.
+Tailwind CSS ka zikar bhi bilkul sahi hai, kyunke yeh ab kaafi popular hai aur utility-first framework hone ki wajah se efficiently classes provide karta hai jo CSS ko aur bhi flexible aur fast bana deti hain. Great explanation!
