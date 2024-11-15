@@ -1,0 +1,74 @@
+js the language 
+
+ 
+1) js the basic
+ 20 days ma bnai gy thy jo ka branden eich na bnayi thy jo ka bani yeh 20 din ma thy is ka ma 
+bht se features miss aur bht se bug ha jis ka oper aj b ak community work kar rahy ha jis 
+ko ecmaScript kehty ha 
+js = language ha 
+managed by ecmaScript
+new feature 
+
+js ma mainly 2 version ha 
+es5,es6 
+
+inbuilt feature 
+console.log
+alert()
+prompt()
+etc yeh  sab js ka inbuilt feature ha jo js ka part ni ha yeh technically hamry browser ma pehly se add hoty ha 
+jis ko ham js ki help se use kar sakty ha 
+
+
+2) variables and constant
+
+  jab b ap prograaming ka use karty ho to ap ko data se deal karna parta ha to is ka matlab 
+  jab b ham koi b programming lang use karty ha data se to deal kary ga hi 
+  to is ka lia sab se pehly data ko create kary ga phir data ko ham technically save b kary ga aur ak unique name dey
+  ga ham apny data ko taky in future jab b hamy apny data ki need ho to unique name ko call kar ka ham apny data
+  ko use kar saky 
+  to ja data ham js ma create kary ga technically wo data hamry browser ki heap memory ma save ho ga aur 
+  hamara browser technicaly hamry ram pa depended ho ga
+  to asa keh sakty ha ka jo js ma data ham save karty technically wo hamry pc ki ram ma save hota ha 
+
+  aur rahy batt variable and const kii 
+  es6 ma  
+  let,const aya ha 
+  to ham let,const ka use hi kary ga 
+  to jo variable hoty ha ham un ki value ki change kar sakty ha 
+  aur const ka to matlab hi const hota ha jis ki kabi b value change ni ho sakty 
+
+  3) compiler and interprator
+
+js english language samjhty ha aur computers english ni smjhty  ap ka computer 0 and 1 jisko 
+  current flow and current bypass bhi keh sakty ha, computers jo ha wo to eng lang smjhy ga ni 
+  to in ka mid ma ak for example translater lgya jata ha jo ka js lang ko convert kar ka machine code ma convert
+  karta ha jis sa hamara computer smjhh sakta ha ka ham kya output derahy ha via prograamming 
+
+  ab yeh jo translater hoty ha un ma 2 ha ak ko 
+  compiler kehty ha 
+  interprator kehty ha 
+  compiler ap ka code ko 
+
+asa smjho ap ka code jab compiler hota ha to 1sec ka time leta ha 
+aur machine code ma jaldi run kar deta ha 
+
+aur interprator 
+asa smjho ka ap ka code interprator ma run hota ha jo ka 
+compiler se kam time leta ha conversion hony ma 
+bytcode ma ap ka code jata ha phir byteCode machineCode ke through 
+change hoti ha jis ko ap ka machine smjh saky
+to is yeh pata chala ka jo runing process ha wo interprator ziyada
+time leta ha compiler to direct machineCode ma convert ho jata 
+
+
+to itna smjho
+ka jo hamara browser ha wo 
+jit compiler use karty ha 
+jit  = just in time => matalb conversion ka lia interprator jesa
+aur code runing ma comiler jesa 
+
+
+
+
+
