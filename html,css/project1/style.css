@@ -19,29 +19,46 @@ html,body{
     background: #ebe7e7;
     display: flex;
     justify-content: end;
-    padding: 30px;
+    align-items: center;
+    gap: 20px;
+    padding: 0 30px;
 }
 .nav h3{
-    padding: 6px;
+ font-weight: 600;
 }
+ .nav i{
+    background-color: black;
+    color: #ffff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: 600;
+ }
 .section{
     width: 100%;
     /* height: 50%; */
     background-color: white;
-    padding-top: 5%;
+    padding: 40px 50px;
 }
 .section h1{
-    font-size: 40px;
+    font-size: 80px;
     text-align: start;
     padding-left: 40px;
-    line-height: 1;
+    font-family: "Work Sans", sans-serif;
+    line-height: 85px;
 }
 .footer{
+    height: 200px;
+    width: 100%;
+    /* margin-top: 50px; */
     /* background-color: red; */
-    background-color: white;
     display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
 }
 .footer p{
-    font-size: 15px;
-    width: 20%;
+    width: 40%;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
 }

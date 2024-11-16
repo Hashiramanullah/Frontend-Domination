@@ -70,5 +70,7 @@ aur code runing ma comiler jesa
 
 
 
-
+functions 
+es5 ) function statement , function expression ,anonymous function
+es6 ) basic fat arrow function , fat arrow with one param , fat arrow with implicit return
 

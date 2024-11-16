@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    /* background-color: #905151; */
+    position: relative;
+   padding-top: 1px;
+}
+.nav{
+    height: 11vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 40px;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav h2{
+    /* background-color: blue; */
+    height: 100%;
+    width: 20%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-right: 2px solid black;
+   font-size: 20px;
+   font-weight: 600;
+}
+.nav h1{
+    /* background-color: rgb(115, 115, 217); */
+    height: 100%;
+    width: 22%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   letter-spacing: -3px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav h2:nth-last-child(2){
+    width: 29%;
+}
+.nav h2:nth-last-child(1){
+    width: 10%;
+}
+
+
+.center{
+    width: 100%;
+    height: 80%;
+    /* background: red; */
+    padding: 4vw;
+    position: relative;
+}
+#content
+{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+ position: relative;
+ color: #fff;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    color: #fff;
+}
+.overlay{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* background: #423838; */
+    padding: 3vw;
+    background-color: rgba(0, 0, 0, 0.153);
+    backdrop-filter: blur(3px);
+}
+.over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+.over1 h1{
+    font-family: sans-serif;
+    font-size: 3.6vw;
+    mix-blend-mode: difference;
+}
+.over1 h2{
+    font-size: 1vw;
+    padding: 2vw;
+    /* background-color: blue; */
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+    padding: 1vw;
+    color: #ffff;
+}
+.over2 h4{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+.over2 i{
+    height: 20px;
+    cursor: pointer;
+    /* background-color: red; */
+}
