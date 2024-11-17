@@ -72,5 +72,81 @@ aur code runing ma comiler jesa
 
 functions 
 es5 ) function statement , function expression ,anonymous function
-es6 ) basic fat arrow function , fat arrow with one param , fat arrow with implicit return
+function abcd(){
+fuction statement 
 
+}
+
+var abcd = function (){
+  fuction expression
+}
+fuction(){
+anonymous function 
+
+}
+
+es6 ) basic fat arrow function , fat arrow with one param , fat arrow with implicit return
+()=>{
+  basic fat arrow func
+}
+
+const abcd = a => { 
+  fat arrow with one parameter 
+}
+
+
+fat arrow with implicit return
+
+Key Points:
+Implicit return works only if there's a single expression.
+Curly braces {} disable implicit return; you'll need to use return explicitly in that case.
+To return objects implicitly, wrap them in parentheses ().
+
+Syntax of Fat Arrow with Implicit Return
+If your function body has a single expression, you can omit both:
+
+{} (curly braces)
+return keyword
+The value of that single expression is returned automatically.
+
+javascript
+Copy code
+const add = (a, b) => a + b;
+In the example above:
+
+The function takes two arguments (a and b).
+The single expression a + b is implicitly returned.
+Example Comparison:
+With Explicit Return:
+javascript
+Copy code
+const multiply = (a, b) => {
+  return a * b; // Explicit return
+};
+console.log(multiply(3, 4)); // Output: 12
+With Implicit Return:
+javascript
+Copy code
+const multiply = (a, b) => a * b; // Implicit return
+console.log(multiply(3, 4)); // Output: 12
+
+
+
+parameter and argument in func
+
+jab b ap ak fun bnaty ho i.e abcd() => yeh (name) yeh jo ha is ma technically ak variable de sakty ho ap jis ko ap 
+parameter kehty ho 
+aur jab func ap call karty hoto koi asy value jo ap na apny function ko assign karni ho usko abcd('hashir') =>
+yeh ap ka argument ho ga
+
+const  abcd =(name)=>{ name apka variable ha  jis ma wo value save ho gi jo apna func call karty hoa di thy
+return console.log(name) => output hashir
+}
+
+abcd('hashir')
+
+return 
+return ka matlab hua , jha par bhi return lagy ga uske age jo bhi likhoga wo jayegi jha par func 
+call hua tha , return func ka andar lagta ha 
+
+// aisa func jo kch return ni karta wo bhi undefined krata hai 
