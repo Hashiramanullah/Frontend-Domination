@@ -1,0 +1,426 @@
+js the language 
+
+ 
+1) js the basic
+ 20 days ma bnai gy thy jo ka branden eich na bnayi thy jo ka bani yeh 20 din ma thy is ka ma 
+bht se features miss aur bht se bug ha jis ka oper aj b ak community work kar rahy ha jis 
+ko ecmaScript kehty ha 
+js = language ha 
+managed by ecmaScript
+new feature 
+
+js ma mainly 2 version ha 
+es5,es6 
+
+inbuilt feature 
+console.log
+alert()
+prompt()
+etc yeh  sab js ka inbuilt feature ha jo js ka part ni ha yeh technically hamry browser ma pehly se add hoty ha 
+jis ko ham js ki help se use kar sakty ha 
+
+
+2) variables and constant
+
+  jab b ap prograaming ka use karty ho to ap ko data se deal karna parta ha to is ka matlab 
+  jab b ham koi b programming lang use karty ha data se to deal kary ga hi 
+  to is ka lia sab se pehly data ko create kary ga phir data ko ham technically save b kary ga aur ak unique name dey
+  ga ham apny data ko taky in future jab b hamy apny data ki need ho to unique name ko call kar ka ham apny data
+  ko use kar saky 
+  to ja data ham js ma create kary ga technically wo data hamry browser ki heap memory ma save ho ga aur 
+  hamara browser technicaly hamry ram pa depended ho ga
+  to asa keh sakty ha ka jo js ma data ham save karty technically wo hamry pc ki ram ma save hota ha 
+
+  aur rahy batt variable and const kii 
+  es6 ma  
+  let,const aya ha 
+  to ham let,const ka use hi kary ga 
+  to jo variable hoty ha ham un ki value ki change kar sakty ha 
+  aur const ka to matlab hi const hota ha jis ki kabi b value change ni ho sakty 
+
+  3) compiler and interprator
+
+js english language samjhty ha aur computers english ni smjhty  ap ka computer 0 and 1 jisko 
+  current flow and current bypass bhi keh sakty ha, computers jo ha wo to eng lang smjhy ga ni 
+  to in ka mid ma ak for example translater lgya jata ha jo ka js lang ko convert kar ka machine code ma convert
+  karta ha jis sa hamara computer smjhh sakta ha ka ham kya output derahy ha via prograamming 
+
+  ab yeh jo translater hoty ha un ma 2 ha ak ko 
+  compiler kehty ha 
+  interprator kehty ha 
+  compiler ap ka code ko 
+
+asa smjho ap ka code jab compiler hota ha to 1sec ka time leta ha 
+aur machine code ma jaldi run kar deta ha 
+
+aur interprator 
+asa smjho ka ap ka code interprator ma run hota ha jo ka 
+compiler se kam time leta ha conversion hony ma 
+bytcode ma ap ka code jata ha phir byteCode machineCode ke through 
+change hoti ha jis ko ap ka machine smjh saky
+to is yeh pata chala ka jo runing process ha wo interprator ziyada
+time leta ha compiler to direct machineCode ma convert ho jata 
+
+
+to itna smjho
+ka jo hamara browser ha wo 
+jit compiler use karty ha 
+jit  = just in time => matalb conversion ka lia interprator jesa
+aur code runing ma comiler jesa 
+
+
+
+functions 
+es5 ) function statement , function expression ,anonymous function
+function abcd(){
+fuction statement 
+
+}
+
+var abcd = function (){
+  fuction expression
+}
+fuction(){
+anonymous function 
+
+}
+
+es6 ) basic fat arrow function , fat arrow with one param , fat arrow with implicit return
+()=>{
+  basic fat arrow func
+}
+
+const abcd = a => { 
+  fat arrow with one parameter 
+}
+
+
+fat arrow with implicit return
+
+Key Points:
+Implicit return works only if there's a single expression.
+Curly braces {} disable implicit return; you'll need to use return explicitly in that case.
+To return objects implicitly, wrap them in parentheses ().
+
+Syntax of Fat Arrow with Implicit Return
+If your function body has a single expression, you can omit both:
+
+{} (curly braces)
+return keyword
+The value of that single expression is returned automatically.
+
+javascript
+Copy code
+const add = (a, b) => a + b;
+In the example above:
+
+The function takes two arguments (a and b).
+The single expression a + b is implicitly returned.
+Example Comparison:
+With Explicit Return:
+javascript
+Copy code
+const multiply = (a, b) => {
+  return a * b; // Explicit return
+};
+console.log(multiply(3, 4)); // Output: 12
+With Implicit Return:
+javascript
+Copy code
+const multiply = (a, b) => a * b; // Implicit return
+console.log(multiply(3, 4)); // Output: 12
+
+
+
+parameter and argument in func
+
+jab b ap ak fun bnaty ho i.e abcd() => yeh (name) yeh jo ha is ma technically ak variable de sakty ho ap jis ko ap 
+parameter kehty ho 
+aur jab func ap call karty hoto koi asy value jo ap na apny function ko assign karni ho usko abcd('hashir') =>
+yeh ap ka argument ho ga
+
+const  abcd =(name)=>{ name apka variable ha  jis ma wo value save ho gi jo apna func call karty hoa di thy
+return console.log(name) => output hashir
+}
+
+abcd('hashir')
+
+return 
+return ka matlab hua , jha par bhi return lagy ga uske age jo bhi likhoga wo jayegi jha par func 
+call hua tha , return func ka andar lagta ha 
+
+// aisa func jo kch return ni karta wo bhi undefined krata hai 
+
+
+3))) undefined is a value
+  yeh value tab di jaty ha jab ap ka variable ko koi value na mili
+  ho ,iska matlab ha , yeh ak garbage value ki trha treat ki jaty ha ,
+  ap isy default value b keh sakty ho
+
+  4))) notdefined 
+       koi particular element /identity ko use karna without its declartion give an error , and that is
+       error is not defined
+
+       5)))) null
+        null is also a value, this is value which resolve like, not found,
+        null is recieved when something is not found and give your null
+
+
+        6))bht se person ka data = Array
+           ak bande ki kaii sari information = object
+
+
+           7)) syncronus and asyncronus
+            snyc means ka yeh ak asa method ha ka ap ka code ko line by line chalaata ha 
+            ap ki jo js lang ha us ka bydefaullt behaviour jo ha sync ha q k js is a sync lang 
+            ham js ka code ko async ma convert kar sakty ha kch asy func laga ka jesa 
+            , setInterval , setTimeOut etc 
+            async code 
+            async code wo code hota ha jo line by line ni chalta ap ki ki jitny b code of lines hoty ha
+            yeh sab ko ak sath chala deta ha aur jo code ap ka sync hota ha us ko mainStack ma rakh di
+            jata ha aur jo code ap ka async ho us ko sideStack ma rakh dia jata ha 
+             jab main stack ma sab task complete ho jay to sideStack ka jitny b async code ha agr un ka time
+             complete ho gya to un ko mainStack ma laya jata ha 
+
+              9)))
+                 this 
+                 this keyword js ma one of the most suspenseful keyword ha 
+                 this ki value barr barr badl sakti hai alag alag conditions ma , sarii condioton
+                 ko smjjhao this ko smjh jao ga 
+
+                 global - window
+                  console.log(this) - window
+
+                 function - window
+                  function abcd() {
+                    consloe.log(this) - window
+                  }
+
+                 method - object
+                   
+                    const user = {
+                      name:function name(){
+                        consloe.log(this) - object
+                      }
+                    }
+                  
+                 fnc inside method (es5) - window
+
+                 var obj   = {
+                  sayname:function(){
+                    const child= ()=>{
+                      console.log(this) -yha this ki value object hi ho gi q ka arrow func use hoa ha aur es5 ma window ho gi
+                    }
+                  }
+                 }
+                 func inside method (es6) - object
+                 var obj = {
+                  name:funcion(){
+                    const myName = ()=> {
+                      console.log(this) - yha this ki value object knsa object ap ka hi object obj wala
+                    }
+                  }
+                 }
+                 constructor func mein this ki value - new blank object
+                
+                 const myFunc =()=>
+                 {
+                  console.log(this) -yha this ki value blnk object ho gi q why q k jab constructer use karty ho to
+                  ap func call karny se pehly new keyword k use karty ho to jo new ap ka constructer func ko ak
+                  blank object de deta ha jis ki wjha se constructer func ma this ki vlue blank-object hoty ha
+                 }
+                 const ans = new myFunc()
+                  
+                 event listener mein this ki value - that element jisper event listener ho
+                 document.querySeletor('btn')
+                 .addeventListner('click',funcion(){
+                  consloe.log(this) - yha this ki value wo pura element ho gi jis ki id btn ha 
+                 })
+                 to yeh smjha event listener ma this ki value wo hoty ha jis ko ap na select kia ho aur 
+                 us par koi event lgya ho to wha this ki value ap ko wohi element mily ga jis par this ki value lagy 
+                 ho gy  
+
+                 10)) call apply bind
+
+                  
+// call apply,bind,
+
+// ye teeen tareeka ha func ko call karne ke kisi object
+// ko this mann kar 
+
+
+// call history
+// var obj = {
+//     name:'hshir'
+// }
+
+// function meraNA(){
+//     console.log(this);
+    
+// }
+// meraNA.call(obj)
+// agr call ka use is lia hota ha ka agr ap na this ki value jo ha wo window ni rakhny apni marzi ki bhjni
+// ha to app call ka use karty ho callak func ha ap call ka andar jo b object dall do ga wo ap ka function ma access ho 
+// jay ga
+
+// apply,history
+
+// var obj1 = {
+//     name:'fm'
+// }
+// const yehApply = (a,b,c)=>{
+//     console.log(this,a,b,c);
+    
+// }
+// function yehApply(a,b,c){
+//     console.log(this,a,b,c);
+
+// }
+// yehApply.apply(obj1,[1,3,6])
+
+// apply is lia use hota ha ka jo agr ap this value ka ilawa kch aur parameter ma bhjna chahty ho to app apply
+// ka use karo ga apply apny argument ma ak array ma kch chezy leta ha phir func ka parameter ma accesss ho jaty ha
+
+
+// bind , histroy \
+
+
+var obj = {name1:'hashir'
+    ,age:23}
+function bindKaro()
+{
+console.log(this);
+
+}
+const badmaChalaLena = bindKaro.bind(obj)
+badmaChalaLena()
+// bind yeh karta ha ka jo ap na this ki value decide karny ho wo ap jesy call ma add 
+// karty thy ab ap wo bind ma kar do bind ap ko direct value ni de ga bind method ap ko
+// ak function deta ha jis ko a ap ak variable ma store karty ho phir ap us ko badd ma chalaty ho 
+
+
+
+
+// 11))) prototypal inheritance
+
+//  hum objects create karte hai and kisi parent constructor function ke prototpe mein kch add kar dety hai and
+//  jab b add hota ha to wo parent se banny waly sabhi children instances ko wo properties jo parent ko 
+//  prototpe mein di gyi thy wo milti hai sugaat mein.
+
+function makeHuman(name,age){
+    this.name = name,
+    this.age=age
+}
+
+makeHuman.prototype.printNAme = function(){
+    console.log(this.name);
+    
+};
+
+const human1 = new makeHuman('hashir',34);
+const human2 = new makeHuman('hahsi',134);
+
+
+
+// console.log(h    );
+
+// aisa koi b function jisme app kisi b trha this ka use karo aur function call karny se pehly 
+// new keyword ka use kary to , yeh ak construtor func ban jata ha 
+// ab jab b ap func call karty waqt new ka use karty ho to new ap ko ak {blank-object}provide 
+// karta ha aur jha jha ap na function ka andar this ka use kia ho wha pa this ki value blank-object ho jaty 
+// ha 
+// prtotypal inheritance usi ko kehty ha matlab jo apny children ko kch value de jesa ka ham na function dia 
+// ha human 1 aur huma2 ko jo ka dono ma accessable ha 
+
+
+// closures
+// ek asa function jo return kare apny andar koi dosra func , aur use kary apny parent func ka 
+// variable ko , yeh sara seen agr create ho rha ho to is ko ham kahty ha closures
+
+function abcd(){
+    let x =12 ;
+    return function(){
+        x++;
+        console.log(x);
+        
+    }
+}
+const ans = abcd();
+
+// ab hota kch asa ha ka jab ap abcd func ko call karty ho aur wo function chalta ha memory se remove b ho jata 
+// ha lekin ab usy function ka andar abcd func ka variable ka use kia gya ha to interprator yeh check pehly
+// hi kar leta ha agr to func ma kahi parent func ka variable ka use ho rha ha to wo un variable ko 
+// pehly hi side ma rakh leta ha aur badd ma use kar leta jab us ko zarrorat ho
+
+
+
+// 133)))))))))
+// event delegation = jab app event listener se kai sare different elements ke events ko handel kar sake
+// evenet listener ko parent par lgao and unki id,classs ya phir tag ke basis par diffenentiate karke
+// different task karo
+
+// const pr = document.querySelector('#parent');
+// console.log(pr);
+
+// pr.addEventListener("click",function(){
+//     console.log('work');
+    
+// })
+
+// acha ab yeh jo ma ne kia ha na ma ne select parent ko kia ha lekin ma parent ka children ko 
+// click kar rha ho jo ka children ma ne select hi ni kia to phir b mera event chal rha ha is ko 
+// event bubbling kehty ha 
+// 
+
+
+// Event Delegation aur Event Bubbling donon JavaScript ma DOM events handle karne ke concepts hain. Yahan dono ka farq to the point:
+
+// 1. Event Delegation:
+// Iska matlab hai ke ek parent element pe event listener lagana, taake uske child elements ke events ko handle kiya ja sake.
+// Yeh efficient hai, kyunki har child element ke liye alag listener lagane ki zarurat nahi hoti.
+// Kaam karta hai event bubbling ki wajah se.
+// 2. Event Bubbling:
+// Yeh ek mechanism hai jisme event sabse pehle target element pe trigger hota hai, aur phir parent elements tak bubble karta hai.
+// Sequence: Target → Parent → Grandparent → ... (Root)
+// Example for Clarity:
+// Event Delegation:
+
+// javascript
+// Copy code
+// document.getElementById('parent').addEventListener('click', (event) => {
+//     if (event.target.tagName === 'BUTTON') {
+//         console.log('Button clicked:', event.target.textContent);
+//     }
+// });
+// Sirf parent pe listener laga, magar child buttons ka click handle ho raha hai.
+// Event Bubbling:
+
+// javascript
+// Copy code
+// document.querySelector('button').addEventListener('click', () => {
+//     console.log('Button clicked!');
+// });
+// Button pe click hone ke baad event bubble karta hai aur parent listeners tak ja sakta hai.
+// Summary:
+
+// Event Delegation: Parent ke through child events ko handle karte hain.
+// Event Bubbling: Event target se root tak propagate karta hai.
+
+hofnc higher order function kya hota ha 
+asa koi b function jo apny parameter ma ak function recive kary aur apny andar se return kary us ko ham higher order func kehty ha
+for example forEach method ak higher order func ha q ka wo apny parameter ma ak function leta
+
+
+js the DOM
+
+yr dom ma matlab asa smjho ka ham js ma rehty hoa apny html page ma kch create 
+kar sakty ha aur kch changing kar sakty ha is lia ham dom ka use karty ha dom = document object model
+acha ab sab sab se pehle is ma select karny ka bht se method ha 
+1)querySelector is sa ap koi b tag select kar sakty ho agr class ya id select karna to wo b ho jay ga
+2)
+document.getElementById 
+yeh sirf wo element chose kary ga jis pa id lagi ho gi asy 
+hi getElementByClassName ha 
+
+aur create b kar sakty ho remove b kar saky gy aur append b kar sakty
+

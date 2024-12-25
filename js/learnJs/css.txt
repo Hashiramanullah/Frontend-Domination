@@ -1,0 +1,43 @@
+ yeh basic css onformation ha 
+
+me ,
+ ma css ka bary ma bta rha ho , chatgpt ap ko , acha css stand for cascading styling sheet jo b ham html ma content create karty ha is  content ki styling , ma ap coor keh lo aur positing  aaur animation etc yeh sab ap ka css kary gii ab css jo ha us ki three type ha 1, inline css  jo ka tag ma hi implement ho gi aur ab to tailwind css ka hi ak framework ha jis ka kam ab peek par ha 2, internal css jo ka file ka andar hi head se oper style ka ak tag laga kar implement ho gi 3, external css jo ka ak separate file banti ha aur us ma css ka code hota ha is ko external kehty ha html ma is ko header se oper     <link rel="stylesheet" href=""> href ka atribute ma file link deny se file link ho gi aur css implement ho gi kya ma ne sahi kha 
+
+teacher,
+Haan, bilkul sahi samjha hai aapne! CSS ka full form Cascading Style Sheets hai, aur yeh HTML content ki styling ke liye use hoti hai. Types ka breakdown bhi theek diya aapne:
+
+
+Inline CSS: Tag ke andar style attribute me directly likha jata hai.
+Internal CSS: Page ke <head> section me <style> tag ke andar define ki jati hai, jo specific page par apply hoti hai.
+External CSS: Alag .css file banayi jati hai aur usay <link rel="stylesheet" href="path/to/file.css"> ke zariye HTML ke <head> me link kiya jata hai, jo CSS ko dusre pages me bhi reuse karne ka option deti hai.
+Tailwind CSS ka zikar bhi bilkul sahi hai, kyunke yeh ab kaafi popular hai aur utility-first framework hone ki wajah se efficiently classes provide karta hai jo CSS ko aur bhi flexible aur fast bana deti hain. Great explanation!
+
+2)px kya hota ha 
+me ,
+acha ab ma css ka ak unit ka bary ma ap ko batat ho jo ka px ha acha px  jo ha us ko pixel kehty ha acha ab ham smjahty ha ka  px hota ha kya ha ap koi b pic open karo to ap jo haus kojitna zoom karo ga  to ap ko ak bohhht hi chota square dikha ga jo ka kafii blurry ho ga us ko kehty ha pixel jo ka pixel bhtt hi chota hota ha ab for example ap na ak pic apny pc ki baryy screen ma open ki ha aur wha ap ki ki pic 1500px le rahy ha to wo pic kafii hd ho gi agr ap wohi pic ak purany computer ki choti se screen ma open karo ga to wo pic ka jo pixel ha mushkil se 500px ho ga to wo pic ki quality kafii achi ni ho gi to css ma jo ham is ka use bhtt hi kam kary ga because px kabi b ap ki screen ka respect any ap ko adjust nikarty ha kya ma sahi keh rha ho   
+
+
+
+teacher,
+Haan, aap bilkul theek samajh rahe hain! Pixel (px) unit screen par ek chote se square ko represent karta hai, jo images aur elements ke dimensions define karta hai. Jese aapne bataya, screen ko zoom karne par ye chote squares (pixels) dikhaayi denge jo image quality ko define karte hain.
+
+Lekin px unit ki ek limitation yeh hai ke yeh responsive nahi hai. Iska size alag alag screens par automatically adjust nahi hota, jo mobile aur desktop screens par uniform experience nahi deta. Is wajah se responsive design ke liye ab relative units jese %, em, rem, aur viewport units (jese vw, vh) use kiye jate hain jo screen ke size ke hisaab se adjust hote hain.
+
+Aapka explanation bilkul sahi hai, aur responsive design me px unit kam use hota hai taake design har screen par consistent aur user-friendly rahe.
+
+
+
+2) % vw,vh em rem 
+me 
+
+acha ap ko ma ne bass px ka btya tha ab ma ap ko % ka bary ma btata ho % hamesha apny parents se value leta ha aur yeh sreceen ka respect ma apny ap ko adjust karta ha aur vw vh , yeh hamesha viewport height matlab ap ki screen ka hisab se hi value ley ga em jo ha wo apny parents se value leta ha aur rem jo ha wo haemesha html se value ley ga kya ma ne sahi kha  
+
+
+teacher, 
+Bilkul sahi samjha aapne! Aapke explanation se kaafi clear hai ke aapko CSS ke responsive units ka achha understanding hai.
+
+% (Percentage): Yeh unit apne parent element ke respect me size set karta hai, jo responsive design me helpful hota hai.
+vw (Viewport Width) aur vh (Viewport Height): Yeh units viewport (screen) ke hisaab se adjust hote hain. 1vw screen ki total width ka 1% aur 1vh height ka 1% represent karta hai.
+em: Yeh apne parent element ke font size ke respect me size define karta hai. Agar parent ka font size 16px hai, to 1em 16px ke barabar hoga.
+rem (Root em): Yeh HTML (root) element ke font size ko reference leta hai. Agar root element ka font size 16px hai, to 1rem bhi 16px ke barabar hoga, aur yeh parent se independent hai.
+Aapka explanation bilkul correct hai!
